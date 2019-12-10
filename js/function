@@ -1,0 +1,158 @@
+what is function:
+A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+
+ex:
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+
+</body>
+........................................................
+ function with parameters:
+syntax:
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+
+ex:<body>
+
+<p>Setting a default value to a function parameter.</p>
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y) {
+  if (y === undefined) {
+    y = 0;
+  }  
+  return x * y;
+}
+document.getElementById("demo").innerHTML = myFunction(4);
+</script>
+
+</body>
+
+the result is zero
+
+.....................................
+
+function invoke:
+Invoking a JavaScript Function
+The code inside a function is not executed when the function is defined.
+
+The code inside a function is executed when the function is invoked.
+
+It is common to use the term "call a function" instead of "invoke a function".
+
+It is also common to say "call upon a function", "start a function", or "execute a function".
+
+In this tutorial, we will use invoke, because a JavaScript function can be invoked without being called.
+
+ex:
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>The global function (myFunction) returns the product of the arguments (a ,b):</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b) {
+  return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(10, 2); invoke here
+</script>
+
+</body>
+ 
+it will return 20
+................................................
+Function Call: 
+With the call() method, you can write a method that can be used on different objects
+ex:
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example creates an object with 3 properties (firstName, lastName, fullName).</p>
+<p>The fullName property is a method:</p> 
+
+<p id="demo"></p>
+
+<script>
+var myObject = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+x = myObject.fullName();
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+
+the resulat return John Doe
+
+.............................................................
+
+Function Apply:
+With the apply() method, you can write a method that can be used on different objects.
+The apply() method is similar to the call() method .
+The difference between call() and apply() :
+
+The call() method takes arguments separately.
+
+The apply() method takes arguments as an array.
+
+ex:
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+var person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+var x = person.fullName.apply(person1, ["Oslo", "Norway"]); 
+document.getElementById("demo").innerHTML = x; 
+</script>
+
+</body>
+ 
+the result John Doe,Oslo,Norway
+...............................................
+
+function Closures:
+JavaScript variables can belong to the local or global scope.
+
+Global variables can be made local (private) with closures.
+
+
+
+
+

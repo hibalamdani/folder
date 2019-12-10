@@ -1,0 +1,164 @@
+ Arithmetic operators take numerical value as operands and return a single numerical value. The standard arithmetic operators are addition (+), subtraction (-), multiplication (*), and division (/).
+
+1-Addition (+)
+The addition operator produces the sum of numeric operands or string concatenation.
+// Number + Number -> addition
+x=1;
+y=3;
+x collect it with y
+z=x+y;
+console.log(z);
+z would be 4
+
+.......................................................................
+Subtraction (-)
+The subtraction operator subtracts the two operands.
+ex:
+x=5;
+y=2;
+subtract from
+z=x-y;
+console.log(z);
+z would be 3
+...........................................................................
+Division (/)
+The division operator produces the quotient of its operands where the left operand is the dividend and the right operand is the divisor.
+ex:
+x=6;
+y=2;
+divide by
+z=x/y;
+console.log(z);
+z would be 3
+
+.....................................................
+Multiplication (*)
+The multiplication operator produces the product of the operands.
+ex:
+x=6;
+y=2;
+multiply by 
+z=x*y;
+console.log(z);
+z would be 12
+...............................................
+Remainder (%)
+The remainder operator returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
+x=12;
+y=5;
+z=x%y;
+console.log(z);
+z would be 2
+
+...................................................
+Exponentiation (**)
+The exponentiation operator returns the result of raising first operand to the power second operand.
+2 ** 3 // 8
+..............................................
+Increment (++)
+The increment operator increments (adds one to) its operand and returns a value.
+Operator: x++ or ++x
+// Postfix  equal
+var x = 3;
+y = x++; // y = 3, x = 4
+
+// Prefix
+var a = 2;
+b = ++a; // a = 3, b = 3
+
+....................................................
+Decrement (--)
+The decrement operator decrements (subtracts one from) its operand and returns a value.
+Operator: x-- or --x
+// Postfix 
+var x = 3;
+y = x--; // y = 3, x = 2
+
+// Prefix
+var a = 2;
+b = --a; // a = 1, b = 1
+
+.......................................................
+Unary negation (-)
+The unary negation operator precedes its operand and negates it.
+
+Syntax : -x
+var x = 3;
+the value would be negative
+y = -x; // y = -3
+
+..................................................
+if statment:
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+ex:
+var time=9;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+The result of greeting will be:
+
+Good morning
+
+
+
+
+
+
+
+........................................................
+switch:
+The switch statement executes a block of code depending on different cases.
+ex:
+var text;
+var fruits = document.getElementById("myInput").value;
+switch(fruits) {
+  case "Banana":
+    text = "Banana is good!";
+    break;
+  case "Orange":
+    text = "I am not a fan of orange.";
+    break;
+  case "Apple":
+    text = "How you like them apples?";
+    break;
+  default:
+    text = "I have never heard of that fruit...";
+}
+the result will be ......
+..........................................................
+
+opdracht :convert from  switch case to if statment:
+x=4;
+switch(x) {
+  case 1:
+    consloe.log(1);
+    break;
+  case 2:
+    consloe.log(2);
+    break;
+  case 3:
+    consloe.log(3);
+    break;
+  default:
+    consloe.log(4);
+}
+
+
+................
+the answer:
+var x=4;
+if(x=1){
+console.log(1);}
+elseif(x=2){
+console.log(2);}
+elseif(x=3){
+console.log(3);}
+else(x=4){
+console.log(4);}
+
